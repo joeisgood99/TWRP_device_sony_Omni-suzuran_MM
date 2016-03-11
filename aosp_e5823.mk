@@ -12,7 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_KERNEL_CONFIG := aosp_kitakami_suzuran_defconfig
+# For AndroPlus Kernel
+TARGET_KERNEL_CONFIG := msm8994-perf_defconfig
+
+#TARGET_KERNEL_CONFIG := aosp_kitakami_suzuran_defconfig
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/suzuran/device.mk)
