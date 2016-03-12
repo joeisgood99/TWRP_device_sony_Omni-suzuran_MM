@@ -16,9 +16,19 @@ include device/sony/kitakami-common/PlatformConfigOmni.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := E5823
 
-TARGET_KERNEL_SOURCE := kernel/sony/kitakami2
-TARGET_KERNEL_CONFIG := kitakami_defconfig
+# For AndroPlus Kernel
+#TARGET_KERNEL_SOURCE := kernel/sony/kitakami2
+#TARGET_KERNEL_CONFIG := msm8994-perf_defconfig 
 
+TARGET_KERNEL_SOURCE := kernel/sony/msm
+TARGET_KERNEL_CONFIG := aosp_kitakami_suzuran_defconfig
+ 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=suzuran
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
+
+# TWRP Recovery
+DEVICE_RESOLUTION := 720x1280
+TW_THEME := portrait_hdpi
+TW_IGNORE_ABS_MT_TRACKING_ID := true
+

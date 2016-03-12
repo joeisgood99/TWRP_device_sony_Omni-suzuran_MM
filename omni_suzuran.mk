@@ -15,11 +15,6 @@
 # Assert
 TARGET_OTA_ASSERT_DEVICE := E5823,suzuran
 
-# TWRP Recovery
-DEVICE_RESOLUTION := 720x1280
-TW_THEME := portrait_hdpi
-TW_IGNORE_ABS_MT_TRACKING_ID := true
-
 # Inherit AOSP Rhine common device parts
 $(call inherit-product, device/sony/suzuran/aosp_e5823.mk)
 
