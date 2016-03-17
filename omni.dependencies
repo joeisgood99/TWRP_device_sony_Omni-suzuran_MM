@@ -6,10 +6,10 @@
     "revision":     "android-6.0"
   },
   {
-    "remote":       "omnirom",
+    "remote":       "Local",
     "repository":   "android_device_sony_kitakami-common",
     "target_path":  "device/sony/kitakami-common",
-    "revision":     "android-6.0"
+    "revision":     "Test"
   },
   {
     "remote":       "omnirom",
