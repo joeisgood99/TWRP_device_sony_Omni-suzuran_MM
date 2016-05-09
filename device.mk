@@ -16,14 +16,14 @@ DEVICE_PACKAGE_OVERLAYS += \
     device/sony/suzuran/overlay
 
 PRODUCT_COPY_FILES := \
-    device/sony/sumire/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
-    device/sony/sumire/rootdir/system/etc/BCM4356.hcd:system/etc/firmware/BCM43xx.hcd \
-    device/sony/sumire/rootdir/system/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-    device/sony/sumire/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
-    device/sony/sumire/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
-    device/sony/sumire/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/sony/sumire/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/sony/sumire/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
+    device/sony/suzuran/rootdir/system/etc/audio_policy.conf:system/etc/audio_policy.conf \
+    device/sony/suzuran/rootdir/system/etc/BCM4356.hcd:system/etc/firmware/BCM43xx.hcd \
+    device/sony/suzuran/rootdir/system/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
+    device/sony/suzuran/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
+    device/sony/suzuran/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
+    device/sony/suzuran/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    device/sony/suzuran/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/sony/suzuran/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
 # Device Specific Permissions
 PRODUCT_COPY_FILES += \
@@ -61,7 +61,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/sony/kitakami-common/platform_omni.mk)
-$(call inherit-product, vendor/sony/suzuran/suzuran-vendor.mk)
+$(call inherit-product, vendor/sony/kitakami-suzuran/suzuran-vendor.mk)
 
 # copy wlan firmware
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4356/device-bcm.mk)
+$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm43455/device-bcm.mk)
